@@ -9,7 +9,7 @@ const Deck = props => {
   return (
     <section id={props.id} className='deck'>
       <header>
-        <h2>{props.deck.deckTitle}</h2>
+        <h2>{props.deck.deckTitle} Projects</h2>
       </header>
       <div className='flex-container'>
         {props.deck.records.map((card, idx) => (
