@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Card from './card';
 
@@ -17,6 +18,11 @@ const Deck = props => {
       </div>
     </section>
   );
+};
+
+Deck.propTypes = {
+  id: PropTypes.string,
+  deck: PropTypes.object
 };
 
 export default Deck;

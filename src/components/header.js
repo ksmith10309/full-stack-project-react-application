@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import styles from "../styles/header.module.scss";
+import styles from '../styles/header.module.scss';
 
 class Header extends React.Component {
   render() {
@@ -12,5 +13,10 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node
+};
 
 export default Header;

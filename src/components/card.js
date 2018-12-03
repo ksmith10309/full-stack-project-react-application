@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "../styles/card.scss";
+import '../styles/card.scss';
 
 const Card = props => {
   return (
@@ -16,6 +17,11 @@ const Card = props => {
       ))}
     </div>
   );
+};
+
+Card.propTypes = {
+  card: PropTypes.object,
+  id: PropTypes.string
 };
 
 export default Card;

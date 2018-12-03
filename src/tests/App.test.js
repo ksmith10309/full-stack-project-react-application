@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.js';
 
-describe("<App/>", () => {
+describe('<App/>', () => {
 
   it('renders without crashing', () => {
     const div = document.createElement('div');

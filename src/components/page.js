@@ -6,7 +6,7 @@ import '../styles/page.scss';
 
 const Page = props => {
   return props.content.map((deck, idx) => (
-    <Deck key={'deck'+(idx + 1)} deck={deck} id={'deck'+(idx + 1)} />
+    <Deck key={'deck'+(idx+1)} deck={deck} id={'deck'+(idx+1)} />
   ));
 };
 

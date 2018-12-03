@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       content: [],
-      title: 'Katherine Smith'
+      title: 'Katherine Smith',
     };
   }
 
@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     const navLinks = this.state.content.map((obj,idx) =>
-      <a href={'#deck'+(idx+1)}>{obj.deckTitle}</a>);
+      <a key={'deck'+(idx+1)} href={'#deck'+(idx+1)}>{obj.deckTitle}</a>);
     return (
       <React.Fragment>
         <Header title={this.state.title}>

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../components/header.js';
-import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("<Header/>", () => {
+describe('<Header/>', () => {
 
   it('renders without crashing', () => {
     const title = 'title';
@@ -14,10 +14,10 @@ describe("<Header/>", () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("is alive at application start", () => {
+  it('is alive at application start', () => {
     const title = 'title';
     let app = shallow(<Header title={title}/>);
-    expect(app.find("nav").exists()).toBeTruthy();
+    expect(app.find('nav').exists()).toBeTruthy();
   });
 
 });
